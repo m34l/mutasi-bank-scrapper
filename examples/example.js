@@ -1,6 +1,6 @@
 // promisifying readline
 const readline = require('readline');
-const {ScrapBCA} = require("../");
+const { ScrapBCA } = require("../");
 const { promisify } = require('util');
 const rl = readline.createInterface({
   input: process.stdin,
@@ -21,11 +21,11 @@ const questionAsync = promisify(rl.question).bind(rl);
   const tglakhir = await questionAsync("Tanggal akhir: ");
   const blnakhir = await questionAsync("Bulan akhir: ");
 
-  const scraper = new ScrapBCA(username, password , {
-    headless : false
+  const scraper = new ScrapBCA(username, password, {
+    headless: true
   });
 
-  const result = await scraper.getStatement(tglawal,blnawal,tglakhir,blnakhir);
+  const result = await scraper.getStatement(tglawal, blnawal, tglakhir, blnakhir);
   console.log(result);
 
   // close readline interface
