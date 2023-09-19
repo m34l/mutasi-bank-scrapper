@@ -23,16 +23,9 @@ banyak fungsi yang akan didapatkan jika kalian bisa mengimplementasikannya kedal
  - Nodejs 16+
  - Google chrome
 
-## Cara Install
 
 ```bash
-npm install --save mutasi-scraper
-```
-
-atau
-
-```bash
-npm install https://github.com/fdciabdul/mutasi-Scraper
+npm install https://github.com/m34l/mutasi-bank-scrapper
 ```
 
 
@@ -43,7 +36,7 @@ const {ScrapBCA} = require('mutasi-scraper');
 ```
 
 Fungsi untuk Scraping bank dipisah dari setiap bank , kalian bisa cek apa saja bank yang work untuk di scrap 
-disini [Index File](https://github.com/fdciabdul/mutasi-scraper/blob/main/index.js)
+disini [Index File](https://github.com/m34l/mutasi-bank-scrapper/blob/main/index.js)
 
 ## Test
 
